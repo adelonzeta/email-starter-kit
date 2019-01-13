@@ -7,7 +7,7 @@
   "bugs": "https://github.com/adelonzeta/email-starter-kit/issues",
   "homepage": "https://github.com/adelonzeta/email-starter-kit#readme",
   "license": "ISC",
-  "template": "static",
+  "main": "gulpfile.js",
   "keywords": [
     "Foundation",
     "HTML",
