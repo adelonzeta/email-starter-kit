@@ -15,7 +15,7 @@
     "Starter Kit"
   ],
   "scripts": {
-    "build": "gulp"
+    "start": "gulp"
   },
   "dependencies": {
     "foundation-emails": "^2.2.1"
