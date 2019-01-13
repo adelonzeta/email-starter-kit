@@ -1,13 +1,18 @@
 {
   "name": "email-starter-kit",
   "version": "0.0.0",
-  "description": "",
+  "description": "Email Starter Kit for building responsive HTML Emails.",
   "author": "Adelon Zeta <hello@adelonzeta.com>",
   "repository": "git+https://github.com/adelonzeta/email-starter-kit.git",
   "bugs": "https://github.com/adelonzeta/email-starter-kit/issues",
   "homepage": "https://github.com/adelonzeta/email-starter-kit#readme",
   "license": "ISC",
-  "files": ["build/**/*"],
+  "keywords": [
+    "Foundation",
+    "HTML",
+    "Email",
+    "Starter Kit"
+  ],
   "scripts": {
     "build": "gulp"
   },
