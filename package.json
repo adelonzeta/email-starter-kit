@@ -7,7 +7,6 @@
   "bugs": "https://github.com/adelonzeta/email-starter-kit/issues",
   "homepage": "https://github.com/adelonzeta/email-starter-kit#readme",
   "license": "ISC",
-  "main": "build/index.html",
   "keywords": [
     "Foundation",
     "HTML",
@@ -15,13 +14,17 @@
     "Starter Kit"
   ],
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "dependencies": {
     "foundation-emails": "^2.2.1"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
     "gulp": "^4.0.0",
+    "gulp-imagemin": "^5.0.3",
     "gulp-inline-css": "^3.3.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
