@@ -1,4 +1,4 @@
 ### Notes
 ```html
-<img src="image-from-asset-folder.jpg" />
+<img src="image-from-assets-folder.jpg" />
 ```
