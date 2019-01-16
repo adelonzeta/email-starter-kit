@@ -4,33 +4,22 @@ const Sass    = require('./config/Sass')
 const Prepare = require('./config/Prepare')
 const Serve   = require('./config/Serve')
 const Watch   = require('./config/Watch')
+const Purge   = require('./config/Purge')
 const Inliner = require('./config/Inliner')
+const Clean   = require('./config/Clean')
+const Assets  = require('./config/Assets')
 
 const compile = series(Prepare, parallel(Panini, Sass))
-const dev = series(compile, Serve, Watch)
+const serve   = series(compile, Serve, Watch)
+const build   = series(compile, Purge, Inliner, Clean, Assets)
 
-exports.default = dev
-// exports.build = parallel(Panini, Sass)
+exports.default = serve
+exports.build = build
 // exports.deploy = series('build', ghpages)
 
-// === default ===
-// clear
-// compile html
-// compile stylesheet
-// compile assets
-// serve files
-// watch changes
 
-// === build ===
-// compile html
-// compile stylesheet
-// optimize stylesheet
-// extract media queries
-// inline styles
-// absolute image src
-// delete css
-// minify html
-// minify images
+
+
 
 // === deploy ===
 // build
@@ -39,9 +28,6 @@ exports.default = dev
 
 
 
-/**
- * Tax Credit Confirmation Number:
- * 026AD2376N
- * 
- * 
- */
+
+
+ 
