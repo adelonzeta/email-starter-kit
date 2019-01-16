@@ -1,4 +1,4 @@
-const gulp = require('gulp')
+const gulp     = require('gulp')
 const imagemin = require('gulp-imagemin')
 
 function Assets() {

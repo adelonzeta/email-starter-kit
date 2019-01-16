@@ -1,12 +1,12 @@
-const gulp   = require('gulp')
+const gulp      = require('gulp')
 const inlineCSS = require('gulp-inline-css')
-const siphon = require('siphon-media-query')
-const replace = require('gulp-replace')
-const htmlmin = require('gulp-htmlmin')
-const fs = require('fs')
+const siphon    = require('siphon-media-query')
+const replace   = require('gulp-replace')
+const htmlmin   = require('gulp-htmlmin')
+const fs        = require('fs')
+require('dotenv').load()
 
 function Inliner() {
-  const assetsURL = 'https://adelonzeta.github.io/email-starter-kit/assets'
   const css = fs.readFileSync('build/css/styles.css').toString()
   const mqCss = siphon(css)
 
@@ -17,8 +17,8 @@ function Inliner() {
       applyTableAttributes: true
     }))
     .pipe(replace('<!-- <style> -->', `<style>${mqCss}</style>`))
-    .pipe(replace('src="', `src="${assetsURL}/`))
-    .pipe(replace('rel="icon" href="', `rel="icon" href="${assetsURL}/`))
+    .pipe(replace('src="', `src="${process.env.ASSETS_URL}/`))
+    .pipe(replace('rel="icon" href="', `rel="icon" href="${process.env.ASSETS_URL}/`))
     .pipe(htmlmin({
       collapseWhitespace: true,
       conservativeCollapse: true,

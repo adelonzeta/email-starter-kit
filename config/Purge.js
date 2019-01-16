@@ -1,4 +1,4 @@
-const gulp = require('gulp')
+const gulp     = require('gulp')
 const purgecss = require('gulp-purgecss')
 
 function Purge() {

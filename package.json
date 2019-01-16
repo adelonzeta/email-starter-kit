@@ -15,7 +15,8 @@
   ],
   "scripts": {
     "start": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "deploy": "gulp deploy"
   },
   "dependencies": {
     "foundation-emails": "^2.2.1"
@@ -23,6 +24,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
+    "dotenv": "^6.2.0",
     "gh-pages": "^2.0.1",
     "gulp": "^4.0.0",
     "gulp-htmlmin": "^5.0.1",
