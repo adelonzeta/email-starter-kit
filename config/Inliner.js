@@ -6,7 +6,7 @@ const htmlmin = require('gulp-htmlmin')
 const fs = require('fs')
 
 function Inliner() {
-  const assetsURL = 'https://adelonzeta.com'
+  const assetsURL = 'https://adelonzeta.github.io/email-starter-kit/assets'
   const css = fs.readFileSync('build/css/styles.css').toString()
   const mqCss = siphon(css)
 
