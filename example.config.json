@@ -2,10 +2,10 @@
   "assets": "https://replace-with-your-assets-url.com/",
   "mail": {
     "API_KEY": "YOUR_SENDGRID_API_KEY",
-    "message": {
-      "to": "RECIPIENT",
-      "from": "YOU",
-      "subject": "EMAIL SUBJECT"
-    }
+    "RECIPIENT": "RECIPIENT",
+    "SENDER": "SENDER",
+    "SUBJECT": "SUBJECT LINE",
+    "TEXT_VERSION": "TEXT_VERSION_FILE_PATH.txt",
+    "HTML_FILE": "HTML_VERSION_FILE_PATH.html"
   }
 }
