@@ -9,6 +9,7 @@ const Inliner = require('./config/Inliner')
 const Clean   = require('./config/Clean')
 const Assets  = require('./config/Assets')
 const Publish = require('./config/Publish')
+const Send    = require('./config/Send')
 
 const compile = series(Prepare, parallel(Panini, Sass))
 const serve   = series(compile, Serve, Watch)
@@ -18,3 +19,4 @@ const deploy  = series(build, Publish)
 exports.default = serve
 exports.build   = build
 exports.deploy  = deploy
+exports.send    = Send

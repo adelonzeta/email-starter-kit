@@ -1,3 +1,11 @@
 {
-  "assets": "https://replace-with-your-assets-url.com/"
+  "assets": "https://replace-with-your-assets-url.com/",
+  "mail": {
+    "API_KEY": "YOUR_SENDGRID_API_KEY",
+    "message": {
+      "to": "RECIPIENT",
+      "from": "YOU",
+      "subject": "EMAIL SUBJECT"
+    }
+  }
 }
