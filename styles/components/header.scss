@@ -1,0 +1,39 @@
+.header {
+  background-color: #37474F;
+
+  @include element('container') {
+
+  }
+
+  table.container.header__wrapper {
+    width: 100%;
+    max-width: 825px;
+    background-color: #263238;
+  }
+
+  @include element('top') {
+    background-color: #37474F;
+  }
+
+  @include element('main') {
+    background-color: #263238;
+
+    img {
+      width: 130px;
+      height: 120px;
+    }
+
+    h1 {
+      font-size: 54px;
+      line-height: 75px;
+      color: #ECEFF1;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 21px;
+      line-height: 30px;
+      color: #CFD8DC;
+    }
+  }
+}

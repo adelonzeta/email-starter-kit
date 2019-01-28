@@ -1,0 +1,19 @@
+// BEM Element
+@mixin element($name) {
+  &__#{$name} {
+    @content;
+  }
+}
+
+// BEM Modifier
+@mixin modifier($name) {
+  &--#{$name} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    @content;
+  }
+}

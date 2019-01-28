@@ -1,8 +1,24 @@
+@import 'settings';
+
 @import 'foundation-emails';
 
-$icecream: #257941;
+/*
+@import
+  'foundation-emails/util/util',
+  'foundation-emails/global',
+  'foundation-emails/components/normalize',
+  'foundation-emails/grid/grid',
+  'foundation-emails/grid/block-grid',
+  'foundation-emails/components/alignment',
+  'foundation-emails/components/visibility',
+  'foundation-emails/components/typography',
+  'foundation-emails/components/button',
+  'foundation-emails/components/callout',
+  'foundation-emails/components/thumbnail',
+  'foundation-emails/components/menu',
+  'foundation-emails/components/outlook-first',
+  'foundation-emails/components/media-query';
+*/
 
-html, body {
-  background: $icecream;
-  color: #ffffff;
-}
+@import 'base/module';
+@import 'components/module'
